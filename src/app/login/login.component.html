@@ -1,0 +1,39 @@
+<div class="container">
+  <form
+    (ngSubmit)="onSubmit()"
+    #loginUserForm="ngForm"
+    method="post"
+    class="container_form"
+  >
+    <h1>Strepy Log In</h1>
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter your email"
+      [(ngModel)]="user.email"
+      name="email"
+    />
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Enter your password"
+      [(ngModel)]="user.password"
+    />
+    <button type="submit" class="button_login">Login</button>
+    <button (click)="loginWithGoogle()" class="button_login_google">Login With Google</button>
+  </form>
+  <div class="container_image">
+    <div class="container_icons">
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-youtube"></i>
+    </div>
+    <div>
+      <h1>Welcome to strepy</h1>
+      <p>Join us and share your thoughts</p>
+    </div>
+  </div>
+</div>

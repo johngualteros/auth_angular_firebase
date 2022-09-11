@@ -1,4 +1,8 @@
 # AuthAngular
+## Auth angular with firebase and protected routes
+
+![](./src/assets/auth_02.jpg)
+![](./src/assets/auth_01.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
